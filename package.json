@@ -1,15 +1,23 @@
 {
-  "name": "auto-cli",
-  "version": "1.0.0",
+  "name": "cjj-cli",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "cjj",
+  "description":"cjj简单脚手架",
+  "bin":{
+    "cjj":"bin/index.js"
+  },
+  "files":[
+    "dist",
+    "bin",
+    "README.md"
+  ],
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@inquirer/prompts": "^3.3.2",
     "@rollup/plugin-commonjs": "^28.0.3",
